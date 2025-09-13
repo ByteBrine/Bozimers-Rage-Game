@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"aRing",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.4364399,
+  "name":"aRing",
+  "parent":{
+    "name":"Collide",
+    "path":"folders/Sounds/Collide.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"aRing.wav",
+  "type":0,
+  "volume":0.5,
+}

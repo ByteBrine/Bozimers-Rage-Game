@@ -1,0 +1,121 @@
+/// @desc Navigate Menu
+
+var up     = keyboard_check_pressed(vk_up)    || keyboard_check_pressed(ord("W"));
+var down   = keyboard_check_pressed(vk_down)  || keyboard_check_pressed(ord("S"));
+var accept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
+
+// Set Option Length
+op_length = array_length(option[menu_level]);
+
+// Move Pos
+pos += down - up;
+
+// Play Sound
+if (up) oAudio.menuupSnd = true;
+if (down) oAudio.menudownSnd = true;
+
+// Wrap
+if (op_length > 0) {
+    if (pos >= op_length) pos = 0;
+    if (pos < 0) pos = op_length - 1;
+}
+
+#region Accept Input
+if (accept) {
+	
+	// Previous
+    var prev = menu_level;
+	
+	// Play sound
+	oAudio.menuenterSnd = true;
+
+    switch (menu_level) {
+        
+        // --- Main Menu ---
+        case 0:
+            switch (pos) {
+                case 0: if (global.current_stage != 0) {
+					
+					// Load Current Stage
+					TransitionStart(global.current_stage + 1, sqfadeOut, sqfadeIn); 
+					
+				} else {
+					
+					// Load First Stage
+					TransitionStart(Stage1, sqfadeOut, sqfadeIn);
+					
+				}
+				
+				global.freeplay = false;
+				
+				break; // begin
+				case 1: TransitionStart(rSelect, sqfadeOut, sqfadeIn); break; // if (global.current_stage == 25) 
+                case 2: menu_level = 1; break;                               // options
+                case 3: game_end(); break;                                   // quit
+            }
+        break;
+
+        // --- Settings Menu ---
+        case 1:
+            switch (pos) {
+                case 0: menu_level = 2; break; // visual
+                case 1: menu_level = 3; break; // audio
+            }
+        break;
+
+        // --- Visual Settings ---
+        case 2:
+            switch (pos) {
+                case 0: 
+                    window_set_fullscreen(!global.fullscreen); 
+                    global.fullscreen = !global.fullscreen; 
+                break; // fullscreen
+                
+                case 1: 
+                    horrifi_enable(!global.filter); 
+                    global.filter = !global.filter; 
+                break; // filter
+            }
+        break;
+
+        // --- Audio Settings ---
+        case 3:
+            switch (pos) {
+                case 0: break; // master
+                case 1: break; // music
+                case 2: break; // sounds
+            }
+        break;
+    }
+
+    // reset position on menu change
+    if (prev != menu_level) pos = 0;
+
+    // refresh option count
+    op_length = array_length(option[menu_level]);
+}
+#endregion
+
+// Go back
+if (keyboard_check_pressed(vk_backspace)) && (menu_level != 0) {
+	
+	var prev = menu_level;
+	
+	// Play sound
+	oAudio.menubackSnd = true;		
+		
+	// Save Settings
+	SaveGame();
+		
+	// Go Back
+	if (menu_level == 1) { menu_level = 0; }
+	if (menu_level == 2) || (menu_level == 3) || (menu_level == 4) { menu_level = 1; }
+	
+    // reset position on menu change
+    if (prev != menu_level) pos = 0;
+
+    // refresh option count
+    op_length = array_length(option[menu_level]);	
+		
+}
+

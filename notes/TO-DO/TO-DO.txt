@@ -1,0 +1,23 @@
+// MOST IMPORTANT
+	1. Rewrite 'CRT' Shader
+	2. Implement 'Filter' Toggle
+	3. Create a Pause Menu. [RESUME, RESTART, EXIT].
+	4. Rework Save Settings
+	5. Create Level Data System. [IS_COMPLETE, IS_COLLECTED].
+	6. Save Level Data To File
+7. Finish 'AURANTIACUM'. [Speed Stages].
+8. Finish 'RUBER'. [Final Trials].
+
+// NEXT IMPORTANCE
+1. Create / Design The 'BOZI' Boss Fight.
+2. Create World Intro / Tutorial Cutscenes.
+3. Create End Cutscenes. [ANY%, 100%].
+	4. Add Juice.
+5. Results Screen
+
+// LATER
+	1. Record Gameplay For Steam Trailer
+	2. Edit Steam Trailer.
+	3. Rework Steam Page.
+4. Feedback + Bug-Fixes.
+5. Release Game. [OCT. 2025].
