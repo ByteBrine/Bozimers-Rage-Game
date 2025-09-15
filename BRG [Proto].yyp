@@ -94,6 +94,7 @@
     {"id":{"name":"Stage15","path":"rooms/Stage15/Stage15.yy",},},
     {"id":{"name":"Stage16","path":"rooms/Stage16/Stage16.yy",},},
     {"id":{"name":"Stage17","path":"rooms/Stage17/Stage17.yy",},},
+    {"id":{"name":"Stage18","path":"rooms/Stage18/Stage18.yy",},},
     {"id":{"name":"Stage2","path":"rooms/Stage2/Stage2.yy",},},
     {"id":{"name":"Stage21","path":"rooms/Stage21/Stage21.yy",},},
     {"id":{"name":"Stage3","path":"rooms/Stage3/Stage3.yy",},},
@@ -184,6 +185,7 @@
     {"roomId":{"name":"rSelect","path":"rooms/rSelect/rSelect.yy",},},
     {"roomId":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
     {"roomId":{"name":"Stage17","path":"rooms/Stage17/Stage17.yy",},},
+    {"roomId":{"name":"Stage18","path":"rooms/Stage18/Stage18.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
