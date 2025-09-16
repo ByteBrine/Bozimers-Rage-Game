@@ -76,7 +76,6 @@
     {"id":{"name":"oSelect","path":"objects/oSelect/oSelect.yy",},},
     {"id":{"name":"oShard","path":"objects/oShard/oShard.yy",},},
     {"id":{"name":"oSpike","path":"objects/oSpike/oSpike.yy",},},
-    {"id":{"name":"oSteamStats","path":"objects/oSteamStats/oSteamStats.yy",},},
     {"id":{"name":"oSwap","path":"objects/oSwap/oSwap.yy",},},
     {"id":{"name":"oTrail","path":"objects/oTrail/oTrail.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
@@ -95,6 +94,7 @@
     {"id":{"name":"Stage16","path":"rooms/Stage16/Stage16.yy",},},
     {"id":{"name":"Stage17","path":"rooms/Stage17/Stage17.yy",},},
     {"id":{"name":"Stage18","path":"rooms/Stage18/Stage18.yy",},},
+    {"id":{"name":"Stage19","path":"rooms/Stage19/Stage19.yy",},},
     {"id":{"name":"Stage2","path":"rooms/Stage2/Stage2.yy",},},
     {"id":{"name":"Stage21","path":"rooms/Stage21/Stage21.yy",},},
     {"id":{"name":"Stage3","path":"rooms/Stage3/Stage3.yy",},},
@@ -186,6 +186,7 @@
     {"roomId":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
     {"roomId":{"name":"Stage17","path":"rooms/Stage17/Stage17.yy",},},
     {"roomId":{"name":"Stage18","path":"rooms/Stage18/Stage18.yy",},},
+    {"roomId":{"name":"Stage19","path":"rooms/Stage19/Stage19.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

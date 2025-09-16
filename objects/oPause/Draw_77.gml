@@ -19,7 +19,7 @@ if (pause) {
 }
 
 // Toggle Pause 
-if (keyboard_check_pressed(vk_escape)) && (room != rMenu){
+if (keyboard_check_pressed(vk_escape)) && (room != rMenu) || (os_is_paused()) {
 	
 	if (!pause) { // Pasue Now
 		
@@ -31,6 +31,7 @@ if (keyboard_check_pressed(vk_escape)) && (room != rMenu){
 		// Activate Certain Instances
 		instance_activate_object(oInit);
 		instance_activate_object(oHud);
+		instance_activate_object(oCamera);
 		
 		// Freeze Player
 		global.playerInit = false;
