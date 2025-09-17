@@ -42,7 +42,7 @@ if (accept) {
                 case 2: if (global.current_stage > 9) { menu_level = 3; } break;     
 				case 3: if (global.current_stage > 14) { menu_level = 4; } break;   
 				case 4: if (global.current_stage > 19) { menu_level = 5; } break;   
-				case 5: if (global.current_stage > 25) TransitionStart(Stage26, sqfadeOut, sqfadeIn); break;   
+				case 5: if (global.current_stage == 25) TransitionStart(Stage26, sqfadeOut, sqfadeIn); break;   
             }
         break;
 
