@@ -19,7 +19,7 @@ if (pause) {
 }
 
 // Toggle Pause 
-if (keyboard_check_pressed(vk_escape)) && (room != rMenu) || (os_is_paused()) {
+if (keyboard_check_pressed(vk_escape)) && (room != rMenu) || (!pause) && (os_is_paused()) {
 	
 	if (!pause) { // Pasue Now
 		
