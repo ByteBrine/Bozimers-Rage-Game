@@ -125,6 +125,9 @@ function PLAYER_COLLIDE() {
 	// Horizontal
     move_and_collide(hsp, 0, oWall, abs(hsp));
 	
+	// Horizontal Check
+	if (place_meeting(x + hsp, y, oWall)) state = PLAYER.DEAD;
+	
 	// Vertical
     var _vCol = move_and_collide(0, vsp, oWall, abs(vsp) + 1, hsp, vsp, hsp, vsp);
     if (array_length(_vCol) > 0) { if (vsp > 0) canJump = 10; vsp = 0; }

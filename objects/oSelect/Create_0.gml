@@ -12,12 +12,12 @@ op_space = 16;
 pos = 0;
 
 // Main Menu
-option[0, 0] = "World 1";
-option[0, 1] = "World 2";
-option[0, 2] = "World 3";
-option[0, 3] = "World 4";
-option[0, 4] = "World 5";
-option[0, 5] = " Finale";
+option[0, 0] = "Caerule";
+option[0, 1] = "Viridis";
+option[0, 2] = "Flavus";
+option[0, 3] = "Auranti";
+option[0, 4] = "Ruber";
+//option[0, 5] = " Finale";
 
 // Blue
 option[1, 0] = "Stage 1";
