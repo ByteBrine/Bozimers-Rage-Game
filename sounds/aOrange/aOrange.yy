@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"aSwap",
+  "%Name":"aOrange",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.21666667,
-  "name":"aSwap",
+  "duration":8.140635,
+  "name":"aOrange",
   "parent":{
-    "name":"Collide",
-    "path":"folders/Sounds/SFX/Collide.yy",
+    "name":"MUSIC",
+    "path":"folders/Sounds/MUSIC.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"aSwap.wav",
+  "soundFile":"aOrange.ogg",
   "type":0,
-  "volume":0.5,
+  "volume":1.0,
 }

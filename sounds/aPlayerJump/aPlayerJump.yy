@@ -13,7 +13,7 @@
   "name":"aPlayerJump",
   "parent":{
     "name":"Player",
-    "path":"folders/Sounds/Player.yy",
+    "path":"folders/Sounds/SFX/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -9,11 +9,10 @@ global.fullscreen = 0;
 global.level_count = 25;
 global.MASTER_VOL = 1;
 global.midTransition = false;
-global.MUS_VOL = 1;
 global.playerInit = false;
 global.roomTarget = -1;
-global.send_steam_stats = false;
 global.SFX_VOL = 1;
+global.MUS_VOL = 1;
 global.shard_count = 0;
 
 // Arrays

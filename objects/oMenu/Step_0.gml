@@ -2,6 +2,8 @@
 
 var up     = keyboard_check_pressed(vk_up)    || keyboard_check_pressed(ord("W"));
 var down   = keyboard_check_pressed(vk_down)  || keyboard_check_pressed(ord("S"));
+var left   = keyboard_check_pressed(vk_left)  || keyboard_check_pressed(ord("A"));
+var right  = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));
 var accept = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 
 // Set Option Length
@@ -95,6 +97,52 @@ if (accept) {
     op_length = array_length(option[menu_level]);
 }
 #endregion
+
+// Sound Adjustment
+if (menu_level == 3) {
+	
+	// Master
+	if (pos == 0) { 
+		
+		// Lower
+		if left { global.MASTER_VOL -= 0.25; oAudio.menudownSnd = true; };
+		
+		// Raise
+		if right { global.MASTER_VOL += 0.25; oAudio.menuupSnd = true; };
+		
+		// Clamp
+		global.MASTER_VOL = clamp(global.MASTER_VOL, 0, 1);
+		
+		};
+		
+	// Music
+	if (pos == 1) { 
+		
+		// Lower
+		if left { global.MUS_VOL -= 0.25; oAudio.menudownSnd = true; };
+		
+		// Raise
+		if right { global.MUS_VOL += 0.25; oAudio.menuupSnd = true; };
+		
+		// Clamp
+		global.MUS_VOL = clamp(global.MUS_VOL, 0, 1);
+		
+		};
+		
+	// Sfx
+	if (pos == 2) { 
+		
+		// Lower
+		if left { global.SFX_VOL -= 0.25; oAudio.menudownSnd = true; };
+		
+		// Raise
+		if right { global.SFX_VOL += 0.25; oAudio.menuupSnd = true; };
+		
+		// Clamp
+		global.SFX_VOL = clamp(global.SFX_VOL, 0, 1);
+		
+		};		
+}
 
 // Go back
 if (keyboard_check_pressed(vk_backspace)) && (menu_level != 0) {

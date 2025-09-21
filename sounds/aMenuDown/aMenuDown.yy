@@ -13,7 +13,7 @@
   "name":"aMenuDown",
   "parent":{
     "name":"Menus",
-    "path":"folders/Sounds/Menus.yy",
+    "path":"folders/Sounds/SFX/Menus.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

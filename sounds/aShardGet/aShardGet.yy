@@ -13,7 +13,7 @@
   "name":"aShardGet",
   "parent":{
     "name":"Collide",
-    "path":"folders/Sounds/Collide.yy",
+    "path":"folders/Sounds/SFX/Collide.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
