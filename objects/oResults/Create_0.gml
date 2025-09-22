@@ -16,5 +16,8 @@ option[0, 0] = "Continue";
 option[0, 1] = "Restart";
 option[0, 2] = "Exit";
 
+// Color
+alpha = 0;
+
 op_length = 0;
 menu_level = 0;

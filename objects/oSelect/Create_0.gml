@@ -17,7 +17,7 @@ option[0, 1] = "Viridis";
 option[0, 2] = "Flavus";
 option[0, 3] = "Auranti";
 option[0, 4] = "Ruber";
-//option[0, 5] = " Finale";
+option[0, 5] = " Finale";
 
 // Blue
 option[1, 0] = "Stage 1";

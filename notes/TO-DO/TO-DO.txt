@@ -5,8 +5,8 @@
 	4. Rework Save Settings
 	5. Create Level Data System. [IS_COMPLETE, IS_COLLECTED].
 	6. Save Level Data To File
-7. Finish 'AURANTIACUM'. [Speed Stages].
-8. Finish 'RUBER'. [Final Trials].
+	7. Finish 'AURANTIACUM'. [Swap Stages].
+	8. Finish 'RUBER'. [Final Trials].
 
 // NEXT IMPORTANCE
 1. Create / Design The 'BOZI' Boss Fight.

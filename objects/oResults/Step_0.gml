@@ -20,6 +20,17 @@ if (op_length > 0) {
     if (pos < 0) pos = op_length - 1;
 }
 
+// Alpha
+if (alpha != 0.95) {
+	
+	// Increase 
+	alpha += 0.05;
+	
+	// Clamp
+	alpha = clamp(alpha, 0, 0.75);
+	
+}
+
 #region Accept Input
 if (accept) {
 	

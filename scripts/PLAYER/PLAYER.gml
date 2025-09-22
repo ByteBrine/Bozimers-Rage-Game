@@ -112,6 +112,7 @@ function PLAYER_FINISH() {
 	// Place Menu
 	if (!instance_exists(oResults)) && (!global.midTransition) {
 		
+		// Draw Menu
 		instance_create_depth(x, y, -999, oResults);
 		
 	}
