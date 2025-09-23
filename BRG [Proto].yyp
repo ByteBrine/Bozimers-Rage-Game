@@ -145,6 +145,7 @@
     {"id":{"name":"aYellow","path":"sounds/aYellow/aYellow.yy",},},
     {"id":{"name":"sBlast","path":"sprites/sBlast/sBlast.yy",},},
     {"id":{"name":"sBlue","path":"sprites/sBlue/sBlue.yy",},},
+    {"id":{"name":"sBozimer_Attack","path":"sprites/sBozimer_Attack/sBozimer_Attack.yy",},},
     {"id":{"name":"sBozimer","path":"sprites/sBozimer/sBozimer.yy",},},
     {"id":{"name":"sCollect","path":"sprites/sCollect/sCollect.yy",},},
     {"id":{"name":"sComplete","path":"sprites/sComplete/sComplete.yy",},},
