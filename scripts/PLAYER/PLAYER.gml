@@ -18,6 +18,12 @@ function PLAYER_RUN() {
 		canDash = true; 
 		ScreenShake(1, 5); 
 		
+		if (place_meeting(x, y, oRingBeam)) {
+			
+			oBozi.hp -= 1;
+			
+			}
+		
 		}
 		
     if (!instance_exists(oShard)) shard_collected = true;
