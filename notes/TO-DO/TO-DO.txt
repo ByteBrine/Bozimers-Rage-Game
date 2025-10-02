@@ -9,15 +9,18 @@
 	8. Finish 'RUBER'. [Final Trials].
 
 // NEXT IMPORTANCE
-1. Create / Design The 'BOZI' Boss Fight.
-2. Create World Intro / Tutorial Cutscenes.
-3. Create End Cutscenes. [ANY%, 100%].
+	1. Create / Design The 'BOZI' Boss Fight.
+	2. Create World Intro / Tutorial Cutscenes.
+	3. Create End Cutscenes. [ANY%, 100%].
 	4. Add Juice.
-5. Results Screen
+	5. Results Screen
 
 // LATER
 	1. Record Gameplay For Steam Trailer
 	2. Edit Steam Trailer.
 	3. Rework Steam Page.
-4. Feedback + Bug-Fixes.
+	4. Feedback + Bug-Fixes.
 5. Release Game. [OCT. 2025].
+
+// KNOWN BUGS
+	1. Dialogue Skip Bug

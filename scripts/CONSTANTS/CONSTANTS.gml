@@ -2,11 +2,13 @@
 
 // Globals
 global.current_stage = 0;
+global.dead = false;
 global.filter = 0;
 global.font_main = fMain;
 global.freeplay = false;
 global.fullscreen = 0;
 global.level_count = 25;
+global.loop_pending = false;
 global.MASTER_VOL = 1;
 global.midTransition = false;
 global.playerInit = false;
@@ -14,10 +16,11 @@ global.roomTarget = -1;
 global.SFX_VOL = 1;
 global.MUS_VOL = 1;
 global.shard_count = 0;
+global.unlocked = false;
 
 // Arrays
-global.level_complete = array_create(global.level_count, 0);
-global.level_shard = array_create(global.level_count, 0);
+global.level_complete = array_create(global.level_count + 1, 0);
+global.level_shard = array_create(global.level_count + 1, 0);
 
 
 // Enums

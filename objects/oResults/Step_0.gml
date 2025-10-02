@@ -39,32 +39,49 @@ if (accept) {
 	global.current_level = stage_number - 1;
 	global.level_complete[global.current_level] = 1;
 	if (oPlayer.shard_collected) { global.level_shard[global.current_level] = 1; global.shard_count++; }
-	global.current_stage = max(global.current_stage, global.current_level + 1);
+	global.current_stage = max(global.current_stage, global.current_level + 1);	
 	
 	// Save
-	SaveGame();	
+	if (global.freeplay == false) {
+		
+		// Save
+		SaveProgress();
+		SaveMeta();
+		
+	} else {
+		
+		// Save
+		SaveMeta();
+		
+	}
 	
 	// Play sound
 	oAudio.menuenterSnd = true;
 	switch (pos) {
 			
-            case 0: 
+            case 0: 	
 			
 				// Next Level
-				if (global.freeplay == true) { 
+				if (!instance_exists(oDialogParent)) {
+				
+					if (global.freeplay == true) { 
 		
-					// Return To Level Select
-					TransitionStart(rSelect, sqfadeOut, sqfadeIn);
+						// Return To Level Select
+						TransitionStart(rSelect, sqfadeOut, sqfadeIn);
 		
-					// Reset Toggle
-					global.freeplay = false;
+						// Reset Toggle
+						global.freeplay = false;
 		
-				} else {
+					} else {			
 		
-				// Next Stage	
-			    TransitionStart(room_next(room), sqfadeOut, sqfadeIn);
+					// Next Stage	
+					TransitionStart(room_next(room), sqfadeOut, sqfadeIn);		
+					SaveProgress();
+					SaveMeta();
 	
-				}		
+					}		
+					
+				}
 				
 				// Destroy Menu
 				instance_destroy(oResults);		

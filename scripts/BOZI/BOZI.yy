@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BOZI",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BOZI",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

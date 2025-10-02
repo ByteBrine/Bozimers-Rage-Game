@@ -18,12 +18,6 @@ function PLAYER_RUN() {
 		canDash = true; 
 		ScreenShake(1, 5); 
 		
-		if (place_meeting(x, y, oRingBeam)) {
-			
-			oBozi.hp -= 1;
-			
-			}
-		
 		}
 		
     if (!instance_exists(oShard)) shard_collected = true;
@@ -102,6 +96,9 @@ function PLAYER_DEAD() {
 	// Destroy Hud
 	instance_destroy(oHud);
 	
+	// Dead
+	global.dead = true;
+	
     #endregion
 }
 
@@ -115,6 +112,17 @@ function PLAYER_FINISH() {
     hsp = 0; vsp += grv; onGround = place_meeting(x,y+1,oWall); PLAYER_COLLIDE();
     sprite_index = (vsp < 0) ? sPlayerJump : sPlayerIdle;
 	
+	// Boss
+	if (room == Stage26) && (global.freeplay == false) {
+
+		global.loop_pending = true;
+		global.current_stage = 0; // reset progression pointer here
+		SaveProgress();
+		SaveMeta();
+		TransitionStart(rEnd, sqfadeOut, sqfadeIn);
+
+	}	
+	
 	// Place Menu
 	if (!instance_exists(oResults)) && (!global.midTransition) {
 		
@@ -122,6 +130,9 @@ function PLAYER_FINISH() {
 		instance_create_depth(x, y, -999, oResults);
 		
 	}
+	
+	// Reset
+	global.dead = false;
 	
     #endregion
 }

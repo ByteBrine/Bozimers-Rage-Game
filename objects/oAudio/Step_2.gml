@@ -17,6 +17,34 @@ if (ringSnd == true) {
 	
 }
 
+// Blast Sound
+if (blastSnd == true) {
+	
+	// Play Sound
+	var _snd = audio_play_sound(aBlast, 8, false);
+	
+	// Set Volume
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	// Reset Var
+	blastSnd = false;
+	
+}
+
+// Hit Sound
+if (hitSnd == true) {
+	
+	// Play Sound
+	var _snd = audio_play_sound(aHit, 8, false);
+	
+	// Set Volume
+	audio_sound_gain(_snd, _sfxVol, 0);
+	
+	// Reset Var
+	hitSnd = false;
+	
+}
+
 // Swap Sound
 if (swapSnd == true) {
 	

@@ -11,7 +11,7 @@ if (keyboard_check_pressed(vk_space)
 if (jumpBuffer > 0) jumpBuffer--;
  
 // Run states
-if (global.playerInit == true) {
+if (global.playerInit == true) & (!instance_exists(oDialogParent)) {
 
 	switch (state) {
 	

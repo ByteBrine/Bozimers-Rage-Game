@@ -2,7 +2,7 @@
 
 #region Countdown Sprites
 	
-if (global.playerInit == false) {
+if (global.playerInit == false) && (!instance_exists(oDialogParent)) {
 	
 	// Draw Sprite
 	draw_sprite_ext(sCountdown, image_index, camera_get_view_width(view_camera[0]) / 2.8, camera_get_view_height(view_camera[0]) / 4, 1.25, 1.25, image_angle, c_white, 1);

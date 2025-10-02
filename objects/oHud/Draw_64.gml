@@ -15,12 +15,12 @@ draw_set_halign(fa_left);
 // Stage
 with (oPause) {
 	
-	if (!pause) {
+	if (!pause) && (!instance_exists(oDialogParent)) {
 	
 	// Draw Stage Text
 	draw_text_color(20, 10, room_get_name(room), _c, _c, _c, _c, 0.9);
 	
-	} else {
+	} else if (!instance_exists(oDialogParent)) {
 	
 	// Draw Pause Text
 	draw_text_color(20, 10, "Paused", _c, _c, _c, _c, 0.95);

@@ -12,6 +12,8 @@ menuupSnd = false;
 menudownSnd = false;
 menuenterSnd = false;
 menubackSnd = false;
+hitSnd = false;
+blastSnd = false;
 
 
 // Info Of Current Track

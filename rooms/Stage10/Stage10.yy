@@ -1,8 +1,8 @@
 {
   "$GMRoom":"v1",
   "%Name":"Stage10",
-  "creationCodeFile":"rooms/rParent/RoomCreationCode.gml",
-  "inheritCode":true,
+  "creationCodeFile":"rooms/Stage10/RoomCreationCode.gml",
+  "inheritCode":false,
   "inheritCreationOrder":true,
   "inheritLayers":false,
   "instanceCreationOrder":[

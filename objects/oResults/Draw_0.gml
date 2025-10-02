@@ -44,6 +44,9 @@ if (alpha == 0.75) {
 
 	// Draw Box
 	draw_sprite_ext(sprite_index, image_index, x, y, width / sprite_width, height / sprite_height, 0, c_white, 0.95);
+	
+	// Draw Clear
+	draw_sprite(slevelClear, image_index, x - 16, y - 64);	
 
 	// Draw Text
 

@@ -1,7 +1,7 @@
 /// @desc On End
 
 // Run Countdown
-if (alarmA > 0) {
+if (alarmA > 0) && (!instance_exists(oDialogParent)) && (instance_exists(oAudio)) {
 	
 	// Can't Pause
 	instance_deactivate_object(oPause);
@@ -24,7 +24,7 @@ if (alarmA > 0) {
 	// Go
 	if (alarmA <= 0) {
 		
-		// Can't Pause
+		// Can Pause
 		instance_activate_object(oPause);		
 		
 		// Sound

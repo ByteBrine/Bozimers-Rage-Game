@@ -36,22 +36,24 @@ if (accept) {
         // --- Main Menu ---
         case 0:
             switch (pos) {
-                case 0: if (global.current_stage != 0) {
+                case 0: if (global.loop_pending) {
 					
-					// Load Current Stage
-					TransitionStart(global.current_stage + 1, sqfadeOut, sqfadeIn); 
-					
-				} else {
-					
-					// Load First Stage
-					TransitionStart(Stage1, sqfadeOut, sqfadeIn);
-					
-				}
-				
-				global.freeplay = false;
+			        // Boss was beaten and loop hasn't triggered yet
+			        global.current_stage = 0;
+			        global.loop_pending = false; // consume the loop
+			        TransitionStart(Stage1, sqfadeOut, sqfadeIn);
+
+			    } else if (global.current_stage != 0) {
+			        // Continue from current stage + 1
+			        TransitionStart(global.current_stage + 4, sqfadeOut, sqfadeIn);
+
+			    } else {
+			        // Start from Stage 1
+			        TransitionStart(Stage1, sqfadeOut, sqfadeIn);
+			    }
 				
 				break; // begin
-				case 1: TransitionStart(rSelect, sqfadeOut, sqfadeIn); break; // if (global.current_stage == 25) 
+				case 1: if (global.unlocked == true) { TransitionStart(rSelect, sqfadeOut, sqfadeIn); } break; // if (global.current_stage == 25) 
                 case 2: menu_level = 1; break;                               // options
                 case 3: game_end(); break;                                   // quit
             }
@@ -153,7 +155,7 @@ if (keyboard_check_pressed(vk_backspace)) && (menu_level != 0) {
 	oAudio.menubackSnd = true;		
 		
 	// Save Settings
-	SaveGame();
+	SaveMeta();
 		
 	// Go Back
 	if (menu_level == 1) { menu_level = 0; }
